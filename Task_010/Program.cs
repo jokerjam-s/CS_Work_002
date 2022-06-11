@@ -36,6 +36,7 @@ int CalcNumber(int n){
     return n % 100 / 10;
 }
 
+// -------------------------
 
 int num = InputNum();
 int result = CalcNumber(num);
