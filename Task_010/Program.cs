@@ -11,8 +11,8 @@
 
 
 // метод для запроса числа
-int InputNum(){
-    Console.Write("Input number: ");
+int InputNum(string msg){
+    Console.Write(msg);
     return Convert.ToInt32(Console.ReadLine());
 }
 
@@ -38,7 +38,7 @@ int CalcNumber(int n){
 
 // -------------------------
 
-int num = InputNum();
+int num = InputNum("Input number: ");
 int result = CalcNumber(num);
 
 if(result >= 0){

@@ -10,10 +10,11 @@
 */
 
 // метод для запроса числа
-int InputNum(){
-    Console.Write("Input number: ");
+int InputNum(string msg){
+    Console.Write(msg);
     return Convert.ToInt32(Console.ReadLine());
 }
+
 
 // метод поиска третьей цифры 
 // возвращает цифру или -1, если ее нет
@@ -34,7 +35,7 @@ int FindThirdDigit(int n){
 }
 
 // -------------------------
-int num = InputNum();
+int num = InputNum("Input number: ");
 int result = FindThirdDigit(num);
 
 if(result < 0){ 
